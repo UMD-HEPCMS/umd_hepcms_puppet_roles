@@ -1,0 +1,19 @@
+{
+  "name": "treydock-umd_hepcms_puppet_roles",
+  "version": "0.0.1",
+  "author": "treydock",
+  "summary": "UMD HEPCMS puppet roles module",
+  "license": "Apache-2.0",
+  "source": "git://github.com/UMD-HEPCMS/umd_hepcms_puppet_roles.git",
+  "description": "UMD HEPCMS puppet roles module",
+  "issues_url": "https://github.com/UMD-HEPCMS/umd_hepcms_puppet_roles/issues",
+  "project_page": "http://github.com/UMD-HEPCMS/umd_hepcms_puppet_roles",
+  "tags": [ "hpc", "profile", "osg" ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "CentOS",
+      "operatingsystemrelease": [ "6" ]
+    }
+  ],
+  "dependencies": []
+}
