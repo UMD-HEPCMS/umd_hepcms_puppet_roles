@@ -1,17 +1,8 @@
-# == Class: role::head_node
-#
-# === Authors
-#
-# Trey Dockendorf <treydock@gmail.com>
-#
-# === Copyright
-#
-# Copyright 2015 Trey Dockendorf
-#
-class role::head_node {
+# == Class: role::foreman_all_in_one
+class role::foreman_all_in_one {
 
   include profile::base
-  include profile::nat
+  include profile::mysql::server
   include profile::foreman_proxy
   include profile::foreman
   include profile::puppet::server

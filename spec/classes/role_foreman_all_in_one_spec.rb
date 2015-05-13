@@ -1,14 +1,14 @@
 require 'spec_helper'
 
-describe 'role::head_node' do
+describe 'role::foreman_all_in_one' do
   on_supported_os.each do |os, facts|
     context "on #{os}" do
       let(:facts) { facts }
 
       it { should compile.with_all_deps }
-      it { should create_class('role::head_node') }
+      it { should create_class('role::foreman_all_in_one') }
       it { should contain_class('profile::base') }
-      it { should contain_class('profile::nat') }
+      it { should contain_class('profile::mysql::server') }
       it { should contain_class('profile::puppet::server') }
       it { should contain_class('profile::foreman_proxy') }
       it { should contain_class('profile::foreman') }
